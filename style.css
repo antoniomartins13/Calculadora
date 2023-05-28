@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Braah One', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(150deg, #6d6dff, #0000f7, #1e1eff );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calculadora{
+    height: 500px;
+    width: 420px;
+    box-shadow: 3px 3px 5px 5px #0000002e;
+    border-radius: 35px;
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(110deg, #1e1e8e, #0f0f69, #08084e);
+}
+
+#operacao,#resultado{
+    display: inline;
+}
+
+.resultado{
+    font-size: 40px;
+    text-align: end;
+    height: 70px;
+    padding: 20px;
+    border: #1e1e8e solid 2px;
+    background-color: #87d1ff;
+    box-shadow:  0px 3px 5px 3px #55b9f7 inset;
+    border-radius: 35px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.numeros, .operacoes{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.numeros button{
+    height: 50px;
+    width: calc((100% / 3) - 20px);
+    color: #ffffff;
+    background-color: #b9b9b9;
+}
+
+.operacoes button{
+    height: 50px;
+    width: calc((100% / 2) - 20px);
+    color: #030303;
+    background-color: #ffffff;
+}
+
+#clear, #apagar{
+    background-color: #f1e682;
+}
+
+#igual{
+    background-color: #fd7c7c;
+}
+
+button{
+    font-size: 30px;
+    box-shadow: 0px 1px 5px 3px #0000002e inset;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel='stylesheet' href="./style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <main class="app">
+        <div class="calculadora">
+            <div class="resultado">
+                <p id="resultado"></p>
+            </div>
+            <div class="botoes">
+                <div class="numeros">
+                    <button id="1" onclick="insert('1')">1</button>
+                    <button id="2" onclick="insert('2')">2</button>
+                    <button id="3" onclick="insert('3')">3</button>
+                    <button id="4" onclick="insert('4')">4</button>
+                    <button id="5" onclick="insert('5')">5</button>
+                    <button id="6" onclick="insert('6')">6</button>
+                    <button id="7" onclick="insert('7')">7</button>
+                    <button id="8" onclick="insert('8')">8</button>
+                    <button id="9" onclick="insert('9')">9</button>
+                    <button id="0" onclick="insert('0')" >0</button>
+                    <button id="ponto" onclick="insertDot('.')">,</button>
+                </div>
+                <div class="operacoes">
+                    <button id="apagar" onclick="back()" title="Apagar ultimo caracter">
+                        <i class="bi bi-backspace"></i>
+                    </button>                
+                    <button id="clear" onclick="cleanResult()" title="Limpar tudo">C</button>
+                    <button id="porcentagem" onclick="insertOperation('%')" title="Resto de uma divisão">%</button>
+                    <button id="multiplicacao" onclick="insertOperation('*')" title="Multiplicar">X</button>
+                    <button id="divisao"onclick="insertOperation('/')" title="Dividir">/</button>
+                    <button id="menos"onclick="insertOperation('-')" title="Subtrair">-</button>
+                    <button id="mais" onclick="insertOperation('+')" title="Somar">+</button>
+                    <button id="igual"onclick="calculateResult()" title="Realizar operação">=</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
